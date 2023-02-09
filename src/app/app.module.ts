@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
+import { AuthGuard } from './guard/auth-guard.service';
+import { CursosGuard } from './guard/cursos-guard';
+import { AlunosGuard } from './guard/alunos-guard';
 // import { AlunosModule } from './alunos/alunos.module';
 // import { AlunosComponent } from './alunos/alunos.component';
 // import { CursosComponent } from './cursos/cursos.component';
@@ -32,7 +36,12 @@ import { LoginComponent } from './login/login.component';
     // CursosModule,
     // AlunosModule
   ],
-  // providers: [CursosService],
+  providers: [
+    AuthService,
+    AuthGuard,
+    CursosGuard,
+    AlunosGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
