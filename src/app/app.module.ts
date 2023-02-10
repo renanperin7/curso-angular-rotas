@@ -10,6 +10,7 @@ import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guard/auth-guard.service';
 import { CursosGuard } from './guard/cursos-guard';
 import { AlunosGuard } from './guard/alunos-guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 // import { AlunosModule } from './alunos/alunos.module';
 // import { AlunosComponent } from './alunos/alunos.component';
 // import { CursosComponent } from './cursos/cursos.component';
@@ -24,6 +25,7 @@ import { AlunosGuard } from './guard/alunos-guard';
     AppComponent,
     HomeComponent,
     LoginComponent,
+    PaginaNaoEncontradaComponent,
     // AlunosComponent,
     // CursosComponent,
     // CursoDetalheComponent,
